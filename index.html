@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwissManga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'swiss-red': '#FF3E00',
+              'swiss-black': '#111111',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Minimal scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fff;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FF3E00;
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar {
+         width: 12px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+         background: #f1f1f1;
+         border-left: 2px solid #000;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+         background: #000;
+         border: 2px solid #f1f1f1;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white text-swiss-black font-sans antialiased selection:bg-swiss-red selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "SwissManga",
+  "description": "A professional, Swiss-style Manga reading platform powered by MangaDex API.",
+  "requestFramePermissions": []
+}
